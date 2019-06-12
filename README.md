@@ -41,11 +41,11 @@ Sortir le plugin Client de `/fabrique_auto` et le placer à la racine de `/plugi
 Il doit charger les dépendances suivantes :
 
 ```
-<necessite nom="Zcore" compatibilite="[2.6.7;[" />
-<necessite nom="compositions" compatibilite="[3.7.3;[" />
-<necessite nom="facteur" compatibilite="[3.5.2;[" />
+<necessite nom="Zcore" compatibilite="[2.8.0;[" />
+<necessite nom="compositions" compatibilite="[3.7.4;[" />
+<necessite nom="facteur" compatibilite="[3.6.4;[" />
 <necessite nom="simplog" compatibilite="[1.4.4;[" />
-<necessite nom="lim" compatibilite="[2.0.0;[" />
+<necessite nom="lim" compatibilite="[2.0.3;[" />
 ```
 
 Autres plugins indispensables, mais hors zone
