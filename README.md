@@ -1,9 +1,25 @@
 # starter
+Cette contribution SPIP est à la fois un tuto et une un package de fichiers.
+Ce dernier me permet de gagner beaucoup de temps en m'évitant à chaque nouveau projet de refaire les mêmes manips.
 
-## Initialisation
+## Installer SPIP
+[Installer SPIP](https://www.spip.net/fr_download) par la méthode que vous préférez (ZIP, SVN, etc. et bientôt via Composer !)
+Personnellement et en attendant Composer, je privilégie la méthode SVN car cela permet de facilement et rapidement mettre à jour la version de SPIP grâce à la commande `svn up`.
 
-1. Installer SPIP (méthode SVN)
-2. Installer Starter à la racine de votre site.
+### Ma méthode d'installation :
+Je travaille sur un Mac sur lequel j'ai installé MAMP.
+Dans mon répertoire `/htdocs`, je créer le répertoire client. Dans la suite de ce tuto on va considérer que le client s'appelle **Tralala**
+J'ai donc maintenant le répertoire `/htdocs/tralala`.
+Je lance le Terminal, je me place dans le répertoire et j'installe SPIP
+
+```
+cd htdocs/tralala
+svn co svn://trac.rezo.net/spip/branches/spip-3.2 .
+```
+
+Note : faite bien attention au ' .' à la fin de la commande SVN. Cela permet de placer les fichiers SPIP à la racine de mon répertoire `/htdocs/tralala`. Sans le '.' la commande SVN placerait un répertoire `/htdocs/tralala/spip/…` en plus.
+
+## Installer Starter
 Ce dernier va créer les répertoires suivants :
    - `/plugins` avec les sous répertoires  et 
       - `/auto`
@@ -18,7 +34,6 @@ Ce dernier va créer les répertoires suivants :
 ## Créer la connexion avec la base de données
 Voir le Wizard de SPIP.
 
-
 ## Une fois connecté
 
 ### Activer GD2
@@ -27,18 +42,19 @@ Dans  *Configuration -> Fonctions avancées -> Génération de miniatures d'imag
 
 Cette partie est importante car sinon, les fonctions de gestion de logo du plugin La Fabrique ne fonctionneront pas.
 
-### Créer le plugin client
+### Créer le plugin 'tralala'
 * Configuration -> plugins;
 * Télécharger et activer le plugin Fabrique;
 * Créer le plugin Client.
 
 Il va nous simplifier la vie dans la gestion des paramètres spécifiques du site Web.
 
-Sortir le plugin Client de `/fabrique_auto` et le placer à la racine de `/plugins`.
+Sortir le plugin **'tralala'** de `/plugins/fabrique_auto` et le placer à la racine de `/plugins`.
 
-## Dans le plugin Client
+## Dans le plugin tralala
 
-Il doit charger les dépendances suivantes :
+### Charger les automatiquement des plugins
+Il vous suffit alors de copier ces lignes dans le fichier `/tralala/paquet.xml`
 
 ```
 <necessite nom="Zcore" compatibilite="[2.8.0;[" />
@@ -48,13 +64,16 @@ Il doit charger les dépendances suivantes :
 <necessite nom="lim" compatibilite="[2.0.3;[" />
 ```
 
-Autres plugins indispensables, mais hors zone
+Ainsi, à l'activation du plugin **'tralala'**, ces plugins seront automatiquement installés.
+
+
+### Autres plugins indispensables, mais hors zone
 - *dd* : https://bitbucket.org/nicod_/dd
 - *Bigup* : https://gitlab.com/magraine/bigup
 
-Charger également les plugins hors zone
+### Ajouter des configurations par défaut
 
-dans le fichier client_options.php
+Ouvrir le fichier `/tralala/tralala_options.php` et ajouter les lignes suivants :
 
 ```
 /* Plugin Zcore :http://www.yterium.net/Un-framework-HTML-est-il-possible
@@ -81,5 +100,3 @@ $GLOBALS['spip_ecran'] = $_COOKIE['spip_ecran'] = 'large';
 ```
 
 
-
-Le starter est un jeu de squelette compatible Zcore. C'est une base très pratique.
