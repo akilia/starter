@@ -3,11 +3,17 @@
 ## Initialisation
 
 1. Installer SPIP (méthode SVN)
-1. Créer les répertoires 
-   - `/plugins/auto`
-   - `/plugins/fabrique_auto`
+2. Installer Starter à la racine de votre site.
+Ce dernier va créer les répertoires suivants :
+   - `/plugins` avec les sous répertoires  et 
+      - `/auto`
+      - `fabrique_auto`
    - `/squelettes`
-
+      - `/content`
+      - `/footer`
+      - `/head`
+      - `/header`
+      - `/inclure`
 
 ## Créer la connexion avec la base de données
 Voir le Wizard de SPIP.
