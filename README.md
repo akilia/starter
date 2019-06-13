@@ -10,7 +10,7 @@ Personnellement et en attendant Composer, je privilégie la méthode SVN car cel
 ### Ma méthode d'installation :
 Je travaille sur un Mac sur lequel j'ai installé MAMP.
 
-Dans mon répertoire `/htdocs`, je créer le répertoire client. Dans la suite de ce tuto on va considérer que le client s'appelle **Tralala**.
+Dans mon répertoire `/htdocs`, je créé le répertoire client. Dans la suite de ce tuto on va considérer que le client s'appelle **Tralala**.
 
 Via le Finder, je créer donc le répertoire `/htdocs/tralala`.
 Puis je lance le Terminal, je me place dans le répertoire `/htdocs/tralala`. et j'installe SPIP
@@ -59,13 +59,21 @@ Dans  *Configuration -> Fonctions avancées -> Génération de miniatures d'imag
 Cette partie est importante car sinon, les fonctions de gestion de logo du plugin La Fabrique ne fonctionneront pas.
 
 ### Créer le plugin 'tralala'
-* Configuration -> plugins;
-* Télécharger et activer le plugin Fabrique;
-* Créer le plugin Client.
+L'idée ici est de créer un plugin spécifique à notre projet. Ce dernier contiendra les paramètres spécifiques de ce projet et va considérablement nous simplifier la vie.
 
-Il va nous simplifier la vie dans la gestion des paramètres spécifiques du site Web.
+Il va être possible de créer ce plugin en 10 mns, sans grande connaissance de SPIP ni de PHP, ceci grâce au génialissime plugin [La Fabrique](https://plugins.spip.net/fabrique.html).
 
-Sortir le plugin **'tralala'** de `/plugins/fabrique_auto` et le placer à la racine de `/plugins`.
+#### Installer le plugin La Fabrique
+Depuis l'espace privé, aller dans **Configuration -> Gestions des plugins** puis [Télécharger et activer le plugin Fabrique](https://www.spip.net/fr_article3396.html);
+
+#### Créer le plugin Tralala
+Une fois le plugin La Fabrique installé, un nouveau bouton de menu Développement est présent.
+Aller dans **Développement -> La Fabrique**
+
+
+#### Une fois le plugin créé
+Depuis le finder, déplacer le plugin **'tralala'** de `/plugins/fabrique_auto` et le placer à la racine de `/plugins`.
+Vous pouvez maintenant, si vous le voulez, supprimer le répertoire `/plugins/fabrique_auto`.
 
 ## Dans le plugin tralala
 
