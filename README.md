@@ -4,13 +4,16 @@ Ce dernier me permet de gagner du temps en m'évitant à chaque nouveau projet d
 
 ## Installer SPIP
 [Installer SPIP](https://www.spip.net/fr_download) par la méthode que vous préférez (ZIP, SVN, etc. et bientôt via Composer !)
+
 Personnellement et en attendant Composer, je privilégie la méthode SVN car cela permet de facilement et rapidement mettre à jour la version de SPIP grâce à la commande `svn up`.
 
 ### Ma méthode d'installation :
 Je travaille sur un Mac sur lequel j'ai installé MAMP.
-Dans mon répertoire `/htdocs`, je créer le répertoire client. Dans la suite de ce tuto on va considérer que le client s'appelle **Tralala**
-J'ai donc maintenant le répertoire `/htdocs/tralala`.
-Je lance le Terminal, je me place dans le répertoire et j'installe SPIP
+
+Dans mon répertoire `/htdocs`, je créer le répertoire client. Dans la suite de ce tuto on va considérer que le client s'appelle **Tralala**.
+
+Via le Finder, je créer donc le répertoire `/htdocs/tralala`.
+Puis je lance le Terminal, je me place dans le répertoire `/htdocs/tralala`. et j'installe SPIP
 
 ```
 cd htdocs/tralala
@@ -20,6 +23,11 @@ svn co svn://trac.rezo.net/spip/branches/spip-3.2 .
 Note : faite bien attention au ' .' à la fin de la commande SVN. Cela permet de placer les fichiers SPIP à la racine de mon répertoire `/htdocs/tralala`. Sans le '.' la commande SVN placerait un répertoire `/htdocs/tralala/spip/…` en plus.
 
 ## Installer Starter
+Starter est basé principalement sur le plugin [Zcore de SPIP](https://plugins.spip.net/zcore.html).
+Ce dernier permet de gagner un temps fou en développement, en maintenance et en évolutivité.
+
+Pourquoi ? Parce qu'il propose une arborescence des dossiers et des fichiers géniale !
+
 Ce dernier va créer les répertoires suivants :
    - `/plugins` avec les sous répertoires  et 
       - `/auto`
@@ -30,6 +38,14 @@ Ce dernier va créer les répertoires suivants :
       - `/head`
       - `/header`
       - `/inclure`
+
+Tous ces répertoires contiennent des fichiers exemples avec commentaires intégrés.
+
+Enfin à la racine de `/squelettes`, les deux fichiers essentiels à Zcore sont présents :
+- `/squelettes/structure.html`
+- `/squelettes/body.html`
+
+Il existe beaucoup de documentation sur Zcore. Celle qui m'a été le plus utile est une vieille doc sur l'ancêtre de Zcore à savoir Zpip. Voir [Zpip, blocs de page et Ajax](https://contrib.spip.net/Zpip-blocs-de-page-et-Ajax).
 
 ## Créer la connexion avec la base de données
 Voir le Wizard de SPIP.
