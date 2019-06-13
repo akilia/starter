@@ -20,7 +20,7 @@ cd htdocs/tralala
 svn co svn://trac.rezo.net/spip/branches/spip-3.2 .
 ```
 
-Note : faite bien attention au ' .' à la fin de la commande SVN. Cela permet de placer les fichiers SPIP à la racine de mon répertoire `/htdocs/tralala`. Sans le '.' la commande SVN placerait un répertoire `/htdocs/tralala/spip/…` en plus.
+Note : faite bien attention à l'ajout ' .' à la fin de la commande SVN. Cela permet de placer les fichiers SPIP à la racine de mon répertoire `/htdocs/tralala`. Sans cela la commande SVN placerait un répertoire `/htdocs/tralala/spip/…` en plus.
 
 ## Installer Starter
 Starter est basé principalement sur le plugin [Zcore de SPIP](https://plugins.spip.net/zcore.html).
