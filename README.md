@@ -1,6 +1,6 @@
 # starter
-Cette contribution SPIP est à la fois un tuto et une un package de fichiers.
-Ce dernier me permet de gagner beaucoup de temps en m'évitant à chaque nouveau projet de refaire les mêmes manips.
+Cette contribution SPIP est à la fois un tuto et un package de fichiers.
+Ce dernier me permet de gagner du temps en m'évitant à chaque nouveau projet de refaire les mêmes manips.
 
 ## Installer SPIP
 [Installer SPIP](https://www.spip.net/fr_download) par la méthode que vous préférez (ZIP, SVN, etc. et bientôt via Composer !)
