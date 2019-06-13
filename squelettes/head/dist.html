@@ -1,6 +1,6 @@
 [(#REM)
   Cette inclusion est celle utilisee par defaut lorsqu'un head/xxx demande
-	n'existe pas
+	n'existe pas.
 
 	Ces deux balises #NOM_SITE_SPIP et #DESCRIPTIF_SITE_SPIP
 	permettent de récupérer des informations de configuration de SPIP
@@ -21,6 +21,10 @@
 	Ces deux lignes permettent au bout du compte de renseigner le titre
 	de la page affiché tout en haut du navigateur ainsi que la description du site
 	(utile aux moteurs de recherche)
+
+
+	Pour les métadonnées de type  Dublin Core, Open Graph et Twitter Card, voir 
+	https://contrib.spip.net/Metas-version-2
 ]
 <title>[(#NOM_SITE_SPIP|textebrut)]</title>
 [<meta name="description" content="(#DESCRIPTIF_SITE_SPIP|couper{150}|textebrut)" />]

@@ -1,10 +1,11 @@
-<section id="footer">
+[(#REM)
+	ici le header commun à toutes les pages du site.
+
+	Cette inclusion est celle utilisee par defaut lorsqu'un footer/xxx demande n'existe pas.
+	Il est possible de créer en plus un fichier ’header/article.html’ spécifique à tous les articles par exemple.
+  
+]<footer>
 	<div class="container">
-		
+		<div>© [(#DATE|annee) ]#NOM_SITE_SPIP</div>
 	</div>
-	<footer>
-		<div class="container text-center">
-			<span style="opacity:.5">© 2018 #NOM_SITE_SPIP</span>
-		</div>
-	</footer>
-</section>
+</footer>

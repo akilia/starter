@@ -1,24 +1,14 @@
-<nav id="menu">
-	<div class="container">
-		<div class="grid-bottom">
-			<a href="#" class="burger">
-				<span></span>
-				<span></span>
-				<span></span>
-			</a>
-			<h1 class="col">
-				<a href="#URL_SITE_SPIP" id="logo">
-					<img src="#CHEMIN{css/img/logo-arlea-typo.svg}" alt="Arléa">
-				</a>
-			</h1>
-			#INCLURE{fond=inclure/menu, env, identifiant=menu_principal}
-			<a class="text-right toggle-search">
-				<span class="txt">Recherche</span>
-				<i class="icon-search"></i>
-			</a>
-			<div class="socials">
-				<INCLURE{fond=inclure/sociaux}>
-			</div>
-		</div>
-	</div>
-</nav>
+[(#REM)
+	ici le header commun à toutes les pages du site.
+
+	Cette inclusion est celle utilisee par defaut lorsqu'un header/xxx demande n'existe pas.
+	Il est possible de créer en plus un fichier ’header/article.html’ spécifique à tous les articles par exemple.
+  
+]<div class="header">
+	[(#ENV{home,'non'}|=={oui}|?{
+	<h1 class="spip_logo_site">[(#LOGO_SITE_SPIP|image_reduire{224,96})]#NOM_SITE_SPIP</h1>
+	,
+	<strong class="h1 spip_logo_site"><a rel="start home" href="#URL_SITE_SPIP/" title="<:accueil_site:>">[(#LOGO_SITE_SPIP
+            |image_reduire{224,96})]#NOM_SITE_SPIP</a></strong>
+	})][<p id="slogan">(#SLOGAN_SITE_SPIP)</p>]
+</div>
