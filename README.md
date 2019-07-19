@@ -25,13 +25,12 @@ Note : faite bien attention à l'ajout ' .' à la fin de la commande SVN. Cela p
 ## Installer Starter
 Starter est basé principalement sur le plugin [Zcore de SPIP](https://plugins.spip.net/zcore.html).
 Ce dernier permet de gagner un temps fou en développement, en maintenance et en évolutivité.
-
 Pourquoi ? Parce qu'il propose une arborescence des dossiers et des fichiers géniale !
 
-Ce dernier va créer les répertoires suivants :
+Starter fourni de base les répertoires suivants :
    - `/plugins` avec les sous répertoires  et 
       - `/auto`
-      - `fabrique_auto`
+      - `/fabrique_auto`
    - `/squelettes`
       - `/content`
       - `/footer`
