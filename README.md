@@ -124,6 +124,9 @@ defined('_LOG_FILELINE') || define('_LOG_FILELINE', true);
 
 /* Hop, écran large pour tout le monde */
 $GLOBALS['spip_ecran'] = $_COOKIE['spip_ecran'] = 'large';
+
+/* Après avoir créé un mot-clé, revenir sur la page mode VUE de ce mot-clé, au lieu de la page groupe mot-clé*/
+defined('_MOTS_CREATION_RETOUR_MOT_CREE') || define('_MOTS_CREATION_RETOUR_MOT_CREE', true);
 ```
 
 
