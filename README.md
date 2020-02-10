@@ -127,6 +127,9 @@ $GLOBALS['spip_ecran'] = $_COOKIE['spip_ecran'] = 'large';
 
 /* Après avoir créé un mot-clé, revenir sur la page mode VUE de mot-clé, au lieu de la page groupe mot-clé*/
 defined('_MOTS_CREATION_RETOUR_MOT_CREE') || define('_MOTS_CREATION_RETOUR_MOT_CREE', true);
+
+/* par defaut, titre les documents en reprenant le nom du fichier */
+defined('_TITRER_DOCUMENTS') || define('_TITRER_DOCUMENTS', true);
 ```
 
 
