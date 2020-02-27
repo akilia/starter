@@ -2,7 +2,7 @@
 Cette contribution SPIP est à la fois un tuto et un package de fichiers.
 Ce dernier me permet de gagner du temps en m'évitant à chaque nouveau projet de refaire les mêmes manips.
 
-## Installer SPIP
+## 1. Installer SPIP
 [Installer SPIP](https://www.spip.net/fr_download) par la méthode que vous préférez (ZIP, SVN, etc. et bientôt via Composer !)
 
 Personnellement et en attendant Composer, je privilégie la méthode SVN car cela permet de facilement et rapidement mettre à jour la version de SPIP grâce à la commande `svn up`.
@@ -22,7 +22,7 @@ svn co svn://trac.rezo.net/spip/branches/spip-3.2 .
 
 Note : faite bien attention à l'ajout ' .' à la fin de la commande SVN. Cela permet de placer les fichiers SPIP à la racine de mon répertoire `/htdocs/tralala`. Sans cela la commande SVN placerait un répertoire `/htdocs/tralala/spip/…` en plus.
 
-## Installer Starter
+## 2. Installer Starter
 Starter est basé principalement sur le plugin [Zcore de SPIP](https://plugins.spip.net/zcore.html).
 Ce dernier permet de gagner un temps fou en développement, en maintenance et en évolutivité.
 Pourquoi ? Parce qu'il propose (en autre) une arborescence géniale des dossiers et des fichiers !
@@ -46,18 +46,18 @@ Enfin à la racine de `/squelettes`, les deux fichiers essentiels à Zcore sont 
 
 Il existe beaucoup de documentation sur Zcore. Celle qui m'a été le plus utile est une vieille doc sur l'ancêtre de Zcore à savoir Zpip. Voir [Zpip, blocs de page et Ajax](https://contrib.spip.net/Zpip-blocs-de-page-et-Ajax).
 
-## Créer la connexion avec la base de données
+## 3. Créer la connexion avec la base de données
 Voir le Wizard de SPIP.
 
-## Une fois connecté
+## 4. Une fois connecté
 
-### Activer GD2
+### 4.1 Activer GD2
 Dans  *Configuration -> Fonctions avancées -> Génération de miniatures d'images*
 … et activer GD2.
 
 Cette partie est importante car sinon, les fonctions de gestion de logo du plugin La Fabrique ne fonctionneront pas.
 
-### Créer le plugin 'tralala'
+### 4.2 Créer le plugin 'tralala'
 L'idée ici est de créer un plugin spécifique à notre projet. Ce dernier contiendra les paramètres spécifiques de ce projet et va considérablement nous simplifier la vie.
 
 Il va être possible de créer ce plugin en 10 mns, sans grande connaissance de SPIP ni de PHP, ceci grâce au génialissime plugin [La Fabrique](https://plugins.spip.net/fabrique.html).
@@ -74,9 +74,9 @@ Aller dans **Développement -> La Fabrique**
 Depuis le finder, déplacer le plugin **'tralala'** de `/plugins/fabrique_auto` et le placer à la racine de `/plugins`.
 Vous pouvez maintenant, si vous le voulez, supprimer le répertoire `/plugins/fabrique_auto`.
 
-## Dans le plugin tralala
+## 5. Dans le plugin tralala
 
-### Charger les automatiquement des plugins
+### 5.1 Charger les automatiquement des plugins
 Il vous suffit alors de copier ces lignes dans le fichier `/tralala/paquet.xml`
 
 ```
@@ -85,20 +85,19 @@ Il vous suffit alors de copier ces lignes dans le fichier `/tralala/paquet.xml`
 …
 <necessite nom="Zcore" compatibilite="[2.8.4;[" />
 <necessite nom="compositions" compatibilite="[3.8.0;[" />
-<necessite nom="facteur" compatibilite="[3.7.2;[" />
+<necessite nom="facteur" compatibilite="[4.0.3;[" />
 <necessite nom="simplog" compatibilite="[1.4.4;[" />
-<necessite nom="lim" compatibilite="[2.2.1;[" />
+<necessite nom="lim" compatibilite="[2.2.2;[" />
 …
 ```
 
 Ainsi, à l'activation du plugin **'tralala'**, ces plugins seront automatiquement installés.
 
 
-### Autres plugins indispensables, mais hors zone
+### 5.2 Autres plugins indispensables, mais hors zone
 - *dd* : https://bitbucket.org/nicod_/dd
-- *Bigup* : https://gitlab.com/magraine/bigup
 
-### Ajouter des configurations par défaut
+### 5.3 Ajouter des configurations par défaut
 
 Ouvrir le fichier `/tralala/tralala_options.php` et ajouter les lignes suivants :
 
@@ -132,4 +131,5 @@ defined('_MOTS_CREATION_RETOUR_MOT_CREE') || define('_MOTS_CREATION_RETOUR_MOT_C
 defined('_TITRER_DOCUMENTS') || define('_TITRER_DOCUMENTS', true);
 ```
 
-
+## 6. A vous de jouer…
+Perso, je commence toujours par là : [Modifier le nom de « Mon site SPIP »](https://www.spip.net/fr_article3520.html)
