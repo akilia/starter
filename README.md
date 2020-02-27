@@ -23,6 +23,10 @@ svn co svn://trac.rezo.net/spip/branches/spip-3.2 .
 Note : faite bien attention à l'ajout ' .' à la fin de la commande SVN. Cela permet de placer les fichiers SPIP à la racine de mon répertoire `/htdocs/tralala`. Sans cela la commande SVN placerait un répertoire `/htdocs/tralala/spip/…` en plus.
 
 ## 2. Installer Starter
+### En pratique
+Il vous suffit de recupérer le zip de Starter et d'installer les répertoires `/plugins` et `/squelettes` à la racine de votre projet.
+
+### Explications
 Starter est basé principalement sur le plugin [Zcore de SPIP](https://plugins.spip.net/zcore.html).
 Ce dernier permet de gagner un temps fou en développement, en maintenance et en évolutivité.
 Pourquoi ? Parce qu'il propose (en autre) une arborescence géniale des dossiers et des fichiers !
@@ -57,17 +61,17 @@ Dans  *Configuration -> Fonctions avancées -> Génération de miniatures d'imag
 
 Cette partie est importante car sinon, les fonctions de gestion de logo du plugin La Fabrique ne fonctionneront pas.
 
-### 4.2 Créer le plugin 'tralala'
-L'idée ici est de créer un plugin spécifique à notre projet. Ce dernier contiendra les paramètres spécifiques de ce projet et va considérablement nous simplifier la vie.
+### 4.2 Créer le plugin 'Tralala'
+L'idée ici est de créer un plugin spécifique à notre projet. Ce dernier contiendra les paramètres spécifiques et va, par la suite, considérablement nous simplifier la vie.
 
-Il va être possible de créer ce plugin en 10 mns, sans grande connaissance de SPIP ni de PHP, ceci grâce au génialissime plugin [La Fabrique](https://plugins.spip.net/fabrique.html).
+Il est possible de créer ce plugin en 10 mns, sans grande connaissance de SPIP ni de PHP, ceci grâce au génialissime plugin [La Fabrique](https://plugins.spip.net/fabrique.html).
 
 #### Installer le plugin La Fabrique
-Depuis l'espace privé, aller dans **Configuration -> Gestions des plugins** puis [Télécharger et activer le plugin Fabrique](https://www.spip.net/fr_article3396.html);
+Pour cela suivez les indications pour [Installer un plugin](https://www.spip.net/fr_article3396.html) et installez le plugin **Fabrique**.
 
 #### Créer le plugin Tralala
 Une fois le plugin La Fabrique installé, un nouveau bouton de menu Développement est présent.
-Aller dans **Développement -> La Fabrique**
+* Aller dans **Développement -> La Fabrique**
 
 
 #### Une fois le plugin créé
