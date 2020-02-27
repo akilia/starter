@@ -1,0 +1,11 @@
+[(#REM) 
+
+La page sommaire.html est la page d'accueil du site.
+Elle est l'équivalent dans SPIP de la page index.html
+
+Ici, le code proposé dépend du plugin Block : https://github.com/akilia/blocks
+
+]
+<BOUCLE_blocks_accueil(BLOCKS){id_rubrique=1}{par rang_lien, id_block}>
+	<INCLURE{fond=content/block, id_block, composition}>
+</BOUCLE_blocks_accueil>
