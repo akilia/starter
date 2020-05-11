@@ -51,7 +51,7 @@ Enfin à la racine de `/squelettes`, les deux fichiers essentiels à Zcore sont 
 Il existe beaucoup de documentation sur Zcore. Celle qui m'a été le plus utile est une vieille doc sur l'ancêtre de Zcore à savoir Zpip. Voir [Zpip, blocs de page et Ajax](https://contrib.spip.net/Zpip-blocs-de-page-et-Ajax).
 
 ## 3. Créer la connexion avec la base de données
-Voir le Wizard de SPIP.
+Depuis votre navigateur, aller sur `/tralala/ecrire` et suivez la pocédure d'installation de SPIP
 
 ## 4. Une fois connecté
 
