@@ -103,11 +103,11 @@ Il vous suffit alors de copier ces lignes dans le fichier `/tralala/paquet.xml`
 …
 <licence>GNU/GPL</licence>
 …
-<necessite nom="Zcore" compatibilite="[2.8.4;[" />
+<necessite nom="Zcore" compatibilite="[2.8.7;[" />
 <necessite nom="compositions" compatibilite="[3.8.0;[" />
-<necessite nom="facteur" compatibilite="[4.0.3;[" />
+<necessite nom="facteur" compatibilite="[4.0.4;[" />
 <necessite nom="simplog" compatibilite="[1.4.4;[" />
-<necessite nom="lim" compatibilite="[2.2.2;[" />
+<necessite nom="lim" compatibilite="[2.3.3;[" />
 …
 ```
 
