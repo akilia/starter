@@ -68,8 +68,10 @@ Il est possible de créer ce plugin en 10 mns, sans grande connaissance de SPIP 
 
 #### Activer le dépot SPIP zone
 Dans *Configuration Gestion des plugins -> Ajouter des plugins -> Dépôts*, activer le dépôt 'Spip Zone'.
-Ce dépôt est la source principale de plugins SPIP.
-N.B. : voir aussi à ce propos https://plugins.spip.net/spip.php?page=depots
+
+N.B. 1 :Ce dépôt est la source principale de plugins SPIP.
+
+N.B. 2 : voir aussi à ce propos https://plugins.spip.net/spip.php?page=depots
 
 #### Installer le plugin La Fabrique
 Pour cela suivez les indications pour [Installer un plugin](https://www.spip.net/fr_article3396.html) et installez le plugin **Fabrique**.
