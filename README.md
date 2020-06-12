@@ -66,13 +66,27 @@ L'idée ici est de créer un plugin spécifique à notre projet. Ce dernier cont
 
 Il est possible de créer ce plugin en 10 mns, sans grande connaissance de SPIP ni de PHP, ceci grâce au génialissime plugin [La Fabrique](https://plugins.spip.net/fabrique.html).
 
+#### Activer le dépot SPIP zone
+Dans *Configuration Gestion des plugins -> Ajouter des plugins -> Dépôts*, activer le dépôt 'Spip Zone'.
+Ce dépôt est la source principale de plugins SPIP.
+N.B. : voir aussi à ce propos https://plugins.spip.net/spip.php?page=depots
+
 #### Installer le plugin La Fabrique
 Pour cela suivez les indications pour [Installer un plugin](https://www.spip.net/fr_article3396.html) et installez le plugin **Fabrique**.
 
 #### Créer le plugin Tralala
 Une fois le plugin La Fabrique installé, un nouveau bouton de menu Développement est présent.
-* Aller dans **Développement -> La Fabrique**
+* Aller dans *Développement -> La Fabrique*
 
+**Important !** : dans la partie *Fichiers*, chochez toutes les options à savoir :
+- `Autorisations`
+- `Fonctions`
+- `Options`
+- `Pipelines` 
+
+Explications : cela créer les fichiers `/tralala/tralala_autorisations.php`, `/tralala/tralala_fonctions.php`, etc. qui vont considérablement vous simplifiez la vie.
+
+Dans la suite de ce tuto, on va rapidement avoir besoin du fichier `/tralala/tralala_options.php` 
 
 #### Une fois le plugin créé
 Depuis le finder, déplacer le plugin **'tralala'** de `/plugins/fabrique_auto` et le placer à la racine de `/plugins`.
@@ -125,14 +139,16 @@ if (!isset($GLOBALS['z_blocs'])) {
 */
 defined('_LOG_FILELINE') || define('_LOG_FILELINE', true);
 
-/* Hop, écran large pour tout le monde */
-$GLOBALS['spip_ecran'] = $_COOKIE['spip_ecran'] = 'large';
+
+/* Par defaut, titre les documents en reprenant le nom du fichier */
+/* Option avec des effets de bord curieux (pour pas dire relou :) sur SPIP <= 3.2, mais vraiment bien avec SPIP >= 3.3 */
+defined('_TITRER_DOCUMENTS') || define('_TITRER_DOCUMENTS', true);
 
 /* Après avoir créé un mot-clé, revenir sur la page mode VUE de mot-clé, au lieu de la page groupe mot-clé*/
 defined('_MOTS_CREATION_RETOUR_MOT_CREE') || define('_MOTS_CREATION_RETOUR_MOT_CREE', true);
 
-/* par defaut, titre les documents en reprenant le nom du fichier */
-defined('_TITRER_DOCUMENTS') || define('_TITRER_DOCUMENTS', true);
+/* Hop, écran large pour tout le monde (pour SPIP <= 3.2) */
+$GLOBALS['spip_ecran'] = $_COOKIE['spip_ecran'] = 'large';
 ```
 
 ## 6. A vous de jouer…
