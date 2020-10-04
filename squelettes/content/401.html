@@ -1,11 +1,9 @@
 <div class="container">
-	[(#REM) Fil d'Ariane ]
-	<div id="hierarchie"><a href="#URL_SITE_SPIP/"><:accueil_site:></a><span class="sep"> &gt; </span><strong class="on"><:pass_erreur:>[ (#ENV{status})]</strong></div>
 	<header>
 		<h1 class="h1"><:pass_erreur:>[ (#ENV{status})]</h1>
 	</header>
 	<main>
-		[<div class="chapo">(#ENV{erreur})</div>]
-		#FORMULAIRE_LOGIN{#ENV{cible},'',0}
+		<div class="texte">Cette est en accès restreint.</div>
+		<div>#FORMULAIRE_LOGIN</div>
 	</main>
 </div>
