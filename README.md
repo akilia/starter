@@ -104,10 +104,10 @@ Il vous suffit alors de copier ces lignes dans le fichier `/tralala/paquet.xml`
 <licence>GNU/GPL</licence>
 …
 <necessite nom="Zcore" compatibilite="[2.8.7;[" />
-<necessite nom="compositions" compatibilite="[3.8.0;[" />
+<necessite nom="compositions" compatibilite="[3.8.1;[" />
 <necessite nom="facteur" compatibilite="[4.0.4;[" />
-<necessite nom="simplog" compatibilite="[1.4.4;[" />
-<necessite nom="lim" compatibilite="[2.3.3;[" />
+<necessite nom="simplog" compatibilite="[1.5.0;[" />
+<necessite nom="lim" compatibilite="[3.0.3;[" />
 …
 ```
 
@@ -152,6 +152,9 @@ defined('_MOTS_CREATION_RETOUR_MOT_CREE') || define('_MOTS_CREATION_RETOUR_MOT_C
 /* Hop, écran large pour tout le monde (pour SPIP <= 3.2) */
 $GLOBALS['spip_ecran'] = $_COOKIE['spip_ecran'] = 'large';
 ```
+## 7. Activer le plugin Tralala
+Dans *Configuration -> Gestion des plugins*, aller dans l'onglet "Inactifs" et activer le plugin `Tralala`.
+Une fenêtre popup va vous proposer des actions supplémentaires à savoir activer les plugins déclarés plus dans le paragraphe 5.1. C'est bien ce qu'on veut.
 
 ## 6. A vous de jouer…
 Perso, je commence toujours par là : [Modifier le nom de « Mon site SPIP »](https://www.spip.net/fr_article3520.html)
