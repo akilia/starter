@@ -5,8 +5,6 @@ Ce dernier me permet de gagner du temps en m'évitant à chaque nouveau projet d
 ## 1. Installer SPIP
 [Installer SPIP](https://www.spip.net/fr_download) par la méthode que vous préférez (FTP, spip_loader, SVN, [GIT, Composer](https://contrib.spip.net/Installer-SPIP-avec-GIT-Composer))
 
-Personnellement je continue de privilégier la méthode SVN car cela permet de facilement et rapidement mettre à jour la version de SPIP grâce à la commande `svn up`.
-
 ### Ma méthode d'installation :
 Je travaille sur un Mac sur lequel j'ai installé MAMP.
 
