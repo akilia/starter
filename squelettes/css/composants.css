@@ -1,0 +1,39 @@
+/**********************************************/
+/* COMPOSANTS  ===================================*/
+
+/********************   Mobile First ********************/
+
+.carte {
+  position:relative;
+}
+
+.carte__titre {
+  margin:.5rem 0;
+}
+.carte__texte {
+  margin:.5rem 0;
+}
+
+/* Toute la carte devient un lien hypertexte */
+.carte--total-hover a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Gestion d'un hover avec petit effet loupe */
+.carte--effect-io .carte__img {
+  overflow: hidden;
+}
+
+.carte--effect-io  img{
+	transition: all 1s ease-out;
+}
+
+.carte--effect-io:hover  img{
+	transform: scale(1.05);
+	transition: all 1s ease-out;
+}

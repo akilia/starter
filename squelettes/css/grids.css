@@ -1,0 +1,76 @@
+/**********************************************/
+/* GRILLES  ===================================*/
+
+/********************   Mobile First ********************/
+.d-grid {
+  display:grid;
+  grid-row-gap: 2rem;
+  padding-bottom:1rem;
+}
+
+/* Par defaut une grid a un flow = row */
+/* gaf = grid-auto-flow */
+.gaf-column {
+  grid-auto-flow: column;
+}
+
+/*.d-grid{
+  grid-auto-flow: column;
+  grid-column-gap: 1rem;
+}
+*/
+
+.grid__2col,
+.grid__3col,
+.grid__4col {
+  justify-items:center;
+}
+
+
+@media screen and (min-width: 991px) {
+
+  .grid__2col{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid__3col{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid__4col{
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid__12{
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .grid__21 {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .grid__13{
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .grid__34{
+    grid-template-columns: 3fr 4fr;
+  }
+
+  .d-grid,
+  .grid__2col,
+  .grid__3col,
+  .grid__4col,
+  .grid__12,
+  .grid__21,
+  .grid__13,
+  .grid__34 {
+    grid-column-gap: 2rem;
+  }
+}
+
+/* Spéciales */
+.grid__liste_logos {
+  justify-content: center;
+  align-items: center;
+}

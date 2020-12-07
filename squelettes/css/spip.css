@@ -1,0 +1,108 @@
+
+/* SPIP ===================================*/
+/*=========================================*/
+
+/*** Général ***/
+.spip_documents_center img{
+  width:100%;
+  height:auto;
+}
+
+hr.spip {
+  border-top: solid 2px #cf9855;
+  margin-top: 2rem;
+}
+
+/*** Gestion des documents flottant ***/
+.spip_documents_left {
+  float:left;
+  margin-right: 1.5em;
+}
+
+.spip_documents_right {
+  float:right;
+  margin-left: 1.5em;
+}
+
+/* Note les classes Hn.Hn sont générées par le plugin Intertitres Hierarchiques */
+.texte h2.spip,
+.texte h2.h2 {
+  clear:both;
+}
+
+.texte h3.spip,
+.texte h3.h3 {
+  clear:both;
+}
+
+.texte h4.spip,
+.texte h4.h4 {
+  clear:both;
+}
+
+
+/*** Gestion de la mise en page à l'intérieur des textes ***/
+
+/* Bug SPIP 3.3 sur les <figure> */
+.texte figure {width:auto !important}
+
+.texte h2.spip:first-child,
+.texte h2.h2:first-child {
+  margin-top:3rem;
+}
+
+.texte p,
+.texte ul.spip,
+.texte ol.spip {
+  max-width:42rem; /* Accessibilité */
+}
+
+.texte .spip li {
+  padding-top: .5rem;
+}
+
+.texte p + ul.spip,
+.texte p + ol.spip,
+{
+  margin-top:-1rem;
+}
+
+/* Gestion des pictos pour les liens  */
+a.spip_out::after {
+  content: " ➚";
+}
+
+a.spip_mail::before {
+    content: "\002709  ";
+}
+
+a[href^='tel']::before {
+  content:"☏ ";
+}
+
+
+/*** Gestion des formulaires ***/
+
+.editer-groupe .editer {
+    margin-bottom: 20px;
+}
+
+form label{
+  display:inline-block;
+  margin-bottom:.5rem;
+}
+
+/* PLUGINS SPIP   ==================================================*/
+/* Mettre ici les surcharges pour les styles sur les plugins SPIP   */
+
+
+
+
+
+/* BOUTONS ADMIN SPIP ===================================*/
+/* Les boutons d'admin survolent la page (sauf # FORMULAIRE_ADMIN) */
+.spip-admin-bloc,
+.spip-admin-float { z-index: 10000 !important; top:0 !important;  right:0 !important; }
+
+.spip-admin-bloc a,
+.spip-admin-float a { color:white !important; }
