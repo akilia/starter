@@ -104,7 +104,7 @@ Il vous suffit alors de copier ces lignes dans le fichier `/tralala/paquet.xml`
 …
 <necessite nom="Zcore" compatibilite="[2.8.7;[" />
 <necessite nom="compositions" compatibilite="[3.8.1;[" />
-<necessite nom="facteur" compatibilite="[4.0.4;[" />
+<necessite nom="facteur" compatibilite="[4.1.0;[" />
 <necessite nom="simplog" compatibilite="[1.5.0;[" />
 <necessite nom="lim" compatibilite="[3.0.3;[" />
 …
