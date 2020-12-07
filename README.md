@@ -35,6 +35,7 @@ Starter fourni de base les répertoires suivants :
       - `/fabrique_auto`
    - `/squelettes`
       - `/content`
+      - `/css`
       - `/footer`
       - `/head`
       - `/header`
