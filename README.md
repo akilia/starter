@@ -3,7 +3,7 @@ Cette contribution SPIP est à la fois un tuto et un package de fichiers.
 Ce dernier me permet de gagner du temps en m'évitant à chaque nouveau projet de refaire les mêmes manips.
 
 ## 1. Installer SPIP
-[Installer SPIP](https://www.spip.net/fr_download) par la méthode que vous préférez (FTP, spip_loader, SVN, [GIT, Composer](https://contrib.spip.net/Installer-SPIP-avec-GIT-Composer))
+[Installer SPIP](https://www.spip.net/fr_download) par la méthode que vous préférez (FTP, spip_loader, [GIT, Composer](https://contrib.spip.net/Installer-SPIP-avec-GIT-Composer))
 
 ### Ma méthode d'installation :
 Je travaille sur un Mac sur lequel j'ai installé MAMP.
