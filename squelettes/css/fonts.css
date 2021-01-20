@@ -1,6 +1,13 @@
 /* Appeler ici les fonts spécifiques au projet */
+/* doc : https://css-tricks.com/snippets/css/using-font-face/ */
 
-@font-face {  }
+
+/* Things are shifting heavily toward WOFF and WOFF 2, so we can probably get away with: */
+@font-face {
+  font-family: 'MyWebFont';
+  src:  url('fonts/myfont.woff2') format('woff2'),
+        url('fonts/myfont.woff') format('woff');
+}
 
 
 /*** Gestion des titres Hn ***/
