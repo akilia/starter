@@ -1,14 +1,24 @@
-[(#REM)
-	ici le header commun à toutes les pages du site.
+<header class="js-nav">
+	<div class="container">
+		<div class='header__titre'>
+			[(#ENV{type-page}|=={sommaire}|oui)<h1>]
+				<a href="#URL_SITE_SPIP">
+					[<img src="(#LOGO_SITE_SPIP|image_reduire{140}|extraire_attribut{src})" alt='#NOM_SITE_SPIP' class='img-fluid'>]
+					#NOM_SITE_SPIP
+				</a>
+			[(#ENV{type-page}|=={sommaire}|oui)</h1>]
+		</div>
 
-	Cette inclusion est celle utilisee par defaut lorsqu'un header/xxx demande n'existe pas.
-	Il est possible de créer en plus un fichier ’header/article.html’ spécifique à tous les articles par exemple.
-  
-]<div class="header">
-	[(#ENV{home,'non'}|=={oui}|?{
-	<h1 class="spip_logo_site">[(#LOGO_SITE_SPIP|image_reduire{224,96})]#NOM_SITE_SPIP</h1>
-	,
-	<strong class="h1 spip_logo_site"><a rel="start home" href="#URL_SITE_SPIP/" title="<:accueil_site:>">[(#LOGO_SITE_SPIP
-            |image_reduire{224,96})]#NOM_SITE_SPIP</a></strong>
-	})][<p id="slogan">(#SLOGAN_SITE_SPIP)</p>]
-</div>
+		<div class='header__nav js-menu'>
+			<nav class='menu'>
+				<INCLURE{fond=inclure/nav_menu, env}>
+			</nav>
+		</div>
+
+		<div href="#" class="burger js-burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+</header>

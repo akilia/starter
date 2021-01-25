@@ -1,0 +1,5 @@
+<B_navigation_principale>
+	<a href="#URL_SITE_SPIP">Accueil</a><span>|</span>
+<BOUCLE_navigation_principale(RUBRIQUES){racine}{!id_rubrique=1}{par num titre}{"<span>|</span>"}>
+	<a href="#URL_RUBRIQUE"[ class=(#EXPOSE{active})]>#TITRE</a>
+</BOUCLE_navigation_principale>
