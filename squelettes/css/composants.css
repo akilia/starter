@@ -1,8 +1,11 @@
 /**********************************************************/
 /***************	 STARTER / COMPOSANTS		***********/
 
-/************** Cartes (appelé 'Cards' dans Boostrap) ***************/
-/* Mobile First */
+/*************************************/
+/************** CARTES ***************/
+/*  (appelé 'CARDS' dans Boostrap)   */
+
+/* Mobile first */
 
 .carte {
 	position:relative;
@@ -38,6 +41,7 @@
 	transform: scale(1.05);
 	transition: all 1s ease-out;
 }
+
 
 /************** Popup ***************/
 /* Le click est géré pas un JS 			*/
@@ -91,6 +95,11 @@
 }
 
 @media screen and (max-width: 48em) {
-	#popup {
-		padding-top: 75px; }
-	}
+#popup {
+	padding-top: 75px; }
+}
+
+
+.text--over_img {
+	text-shadow:0 1px 10px #555;
+}
