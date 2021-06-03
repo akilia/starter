@@ -13,12 +13,6 @@ Dans mon répertoire `/htdocs`, je créé le répertoire client. Dans la suite d
 Via le Finder, je créer donc le répertoire `/htdocs/tralala`.
 Puis je lance le Terminal, je me place dans le répertoire `/htdocs/tralala`. et j'installe SPIP
 
-```
-cd htdocs/tralala
-svn co svn://trac.rezo.net/spip/branches/spip-3.2 .
-```
-
-Note : faite bien attention à l'ajout ' .' à la fin de la commande SVN. Cela permet de placer les fichiers SPIP à la racine de mon répertoire `/htdocs/tralala`. Sans cela la commande SVN placerait un répertoire `/htdocs/tralala/spip/…` en plus.
 
 ## 2. Installer Starter
 ### En pratique
