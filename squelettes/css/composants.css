@@ -103,3 +103,28 @@
 .text--over_img {
 	text-shadow:0 1px 10px #555;
 }
+
+/* Bootstrap : ajout d'un style 'm-6' pour de grande marge */
+.m-6 {
+  margin: 6rem !important;
+}
+
+.mt-6,
+.my-6 {
+  margin-top: 6rem !important;
+}
+
+.mr-6,
+.mx-6 {
+  margin-right: 6rem !important;
+}
+
+.mb-6,
+.my-6 {
+  margin-bottom: 6rem !important;
+}
+
+.ml-6,
+.mx-6 {
+  margin-left: 6rem !important;
+}
