@@ -1,6 +1,12 @@
-<BOUCLE_principale(RUBRIQUES) {id_rubrique}>
-<section>
+<BOUCLE_principale(RUBRIQUES){id_rubrique}>
+<section class='container'>
 	<h1>#TITRE</h1>
-	<div class="texte">#TEXTE</div>
+	[<div class="chapo">(#DESCRIPTIF)</div>]
+	[<div class="texte">(#TEXTE)</div>]
+
+	<BOUCLE_blocks_rubrique(BLOCKS){id_rubrique}{par rang_lien, id_block}>
+		<INCLURE{fond=content/block, id_block, composition}>
+	</BOUCLE_blocks_rubrique>
+	
 </section>
 </BOUCLE_principale>

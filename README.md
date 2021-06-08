@@ -34,6 +34,7 @@ Starter fourni de base les répertoires suivants :
       - `/head`
       - `/header`
       - `/inclure`
+      - `/js`
 
 Tous ces répertoires contiennent des fichiers exemples avec commentaires intégrés.
 
@@ -142,8 +143,6 @@ defined('_TITRER_DOCUMENTS') || define('_TITRER_DOCUMENTS', true);
 /* Après avoir créé un mot-clé, revenir sur la page mode VUE de mot-clé, au lieu de la page groupe mot-clé*/
 defined('_MOTS_CREATION_RETOUR_MOT_CREE') || define('_MOTS_CREATION_RETOUR_MOT_CREE', true);
 
-/* Hop, écran large pour tout le monde (pour SPIP <= 3.2) */
-$GLOBALS['spip_ecran'] = $_COOKIE['spip_ecran'] = 'large';
 ```
 ## 7. Activer le plugin Tralala
 Dans *Configuration -> Gestion des plugins*, aller dans l'onglet "Inactifs" et activer le plugin `Tralala`.

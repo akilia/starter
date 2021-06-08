@@ -5,18 +5,18 @@
 [<link rel="alternate" type="application/rss+xml" title="<:syndiquer_site:>" href="(#URL_PAGE{backend})" />]
 ]
 
-[<link rel="stylesheet" href="(#CHEMIN{css/bootstrap.css}|direction_css)" type="text/css" />]
-[<link rel="stylesheet" href="(#CHEMIN{css/grids.css}|direction_css)" type="text/css" />]
-[<link rel="stylesheet" href="(#CHEMIN{css/composants.css}|direction_css)" type="text/css" />]
-[<link rel="stylesheet" href="(#CHEMIN{css/nav.css}|direction_css)" type="text/css" />]
+[<link rel="stylesheet" href="(#CHEMIN{css/bootstrap.css}|direction_css|timestamp)" type="text/css" />]
+[<link rel="stylesheet" href="(#CHEMIN{css/grids.css}|direction_css|timestamp)" type="text/css" />]
+[<link rel="stylesheet" href="(#CHEMIN{css/composants.css}|direction_css|timestamp)" type="text/css" />]
+[<link rel="stylesheet" href="(#CHEMIN{css/nav.css}|direction_css|timestamp)" type="text/css" />]
 
-[<link rel="stylesheet" href="(#CHEMIN{css/fonts.css}|direction_css)" type="text/css" />]
-[<link rel="stylesheet" href="(#CHEMIN{css/spip.css}|direction_css)" type="text/css" />]
+[<link rel="stylesheet" href="(#CHEMIN{css/fonts.css}|direction_css|timestamp)" type="text/css" />]
+[<link rel="stylesheet" href="(#CHEMIN{css/spip.css}|direction_css|timestamp)" type="text/css" />]
 
 #INSERT_HEAD_CSS
 
 [(#REM) 3. Vos feuilles de style pour l'habillage du site a) theme, b) variante, c) specifique ]
-[<link rel="stylesheet" href="(#CSS{css/mustyle.css}|direction_css)" type="text/css" />]
+[<link rel="stylesheet" href="(#CSS{css/mustyle.css}|direction_css|timestamp)" type="text/css" />]
 
 [(#REM)
 	Balise permettant aux plugins d'inserer des appels javascript ;
@@ -26,6 +26,8 @@
 #INSERT_HEAD
 
 [(#REM) 6. Vos scripts JS ]
+[<script src="(#CHEMIN{js/script.js}|timestamp))" type="text/javascript"></script>]
+[<script src="(#CHEMIN{js/bs_init.js}|timestamp))" type="text/javascript"></script>]
 
 [(#REM) Favicon ]
 [<link rel="icon" type="image/x-icon" href="(#CHEMIN{favicon.ico})" />
